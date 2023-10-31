@@ -1,0 +1,175 @@
+.navigation{
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.navigation-child{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navigation-link a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.welcome{
+    position: absolute;
+    background-color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    top: 60%;
+    left: 34%;
+}
+
+
+body{
+
+    height: 200vh;
+}
+
+.card-container{
+    border: 2px black solid;
+    background-color: #c2ce8d;
+
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+    background-color: aliceblue;
+  }
+
+  .card img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .title{
+    position: relative;
+    border: 2px black solid;
+    background-image: linear-gradient(white, #dbdecb);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cardcontainer-child{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #040404;
+    margin-top: 5px;
+  }
+
+  /*#############################################ZIG-ZAG Layout#############*/
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    padding: 20px;
+  }
+  
+  .image img{
+    height: 300px; /* Adjust the height as needed */
+    width: 300px;
+    padding-left: 40%;
+  }
+  
+  .content {
+    color: red;
+    padding-right: 50%;
+    text-align: justify;
+    /* Add styling for the content and description */
+  }
+
+  .content-reverse {
+    color: red;
+    padding-left: 40%;
+    text-align: justify;
+    padding-right: 5px;
+    /* Add styling for the content and description */
+  }
+
+  .image-reverse img{
+    height: 300px; /* Adjust the height as needed */
+    width: 300px;
+    padding-right: 30%;
+  }
+
+  /* ENDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD OF PHANTOM TROUPE*/
+.thankyou img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thankyou p{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+
+  /*#############################################About#############*/
+
+  .about{
+    background-color: dimgrey;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-child{
+    border: 2px black solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .contact{
+    background-color: dimgrey;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact-child{
+    border: 2px black solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .contact-child ul li{
+    list-style-type: none;
+    color: blue;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
