@@ -205,8 +205,8 @@ body{
 }
 
     .containers{
-        display: grid;
-        grid-template-columns: 2fr 3fr;
+        display: block;
+        margin: auto;
 }
      .card img{
         width: 150px;
