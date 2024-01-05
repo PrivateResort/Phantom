@@ -208,6 +208,7 @@ body{
      .card img{
         width: 50px;
     }
+}
 
 /* Gallery container for medium screens */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -229,9 +230,7 @@ body{
         display: grid;
         grid-template-columns: 1fr 2fr;
 }
-    .card img{
-        width: 50px;
-    }
+
 }
 
 /* Gallery container for large screens */
@@ -255,7 +254,4 @@ body{
         display: grid;
         grid-template-columns: 1fr 2fr;
 }
-     .card img{
-        width: 50px;
-    }
 }
