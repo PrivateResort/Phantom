@@ -200,6 +200,10 @@ body{
     left: 0;
     font-size: 20px;
 }
+
+    .containers{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
 }
 
 /* Gallery container for medium screens */
@@ -217,6 +221,10 @@ body{
     top: 30%;
     left: 0;
     font-size: 20px;
+}
+        .containers{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
 }
 }
 
@@ -236,5 +244,9 @@ body{
     left: 0;
     font-size: 20px;
       color: red;
+}
+        .containers{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
 }
 }
