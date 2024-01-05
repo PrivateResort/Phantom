@@ -178,3 +178,24 @@ body{
         padding: 5px;
         border-radius: 5px;
     }
+
+/* Gallery container for small screens */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Gallery container for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Gallery container for large screens */
+@media (min-width: 1025px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
