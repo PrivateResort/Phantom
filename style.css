@@ -197,7 +197,7 @@ body{
     border: 2px solid black;
     padding: 5px;
     top: 30%;
-    left: 5%;
+    left: 10%;
     font-size: 20px;
 }
 
@@ -206,7 +206,7 @@ body{
         grid-template-columns: 1fr 2fr;
 }
      .card img{
-        width: 50px;
+        width: 150px;
     }
 }
 
@@ -223,7 +223,7 @@ body{
     border: 2px solid black;
     padding: 5px;
     top: 30%;
-    left: 5%;
+    left: 10%;
     font-size: 20px;
 }
         .containers{
