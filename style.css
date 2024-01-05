@@ -207,7 +207,7 @@ body{
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-  .welcome{
+   .welcome{
     position: absolute;
     background-color: aliceblue;
     font-weight: bold;
@@ -215,7 +215,7 @@ body{
     border: 2px solid black;
     padding: 5px;
     top: 30%;
-    left: 25%;
+    left: 0;
     font-size: 20px;
 }
 }
@@ -233,7 +233,8 @@ body{
     border: 2px solid black;
     padding: 5px;
     top: 30%;
-    left: 25%;
+    left: 0;
     font-size: 20px;
+      color: red;
 }
 }
