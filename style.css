@@ -184,6 +184,22 @@ body{
   .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
+  .navigation-child{
+    position: absolute;
+    top: 10%;
+    right: 0;
+  }
+  .welcome{
+    position: absolute;
+    background-color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+    top: 30%;
+    left: 25%;
+    font-size: 20px;
+}
 }
 
 /* Gallery container for medium screens */
@@ -191,6 +207,17 @@ body{
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  .welcome{
+    position: absolute;
+    background-color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+    top: 30%;
+    left: 25%;
+    font-size: 20px;
+}
 }
 
 /* Gallery container for large screens */
@@ -198,4 +225,15 @@ body{
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+  .welcome{
+    position: absolute;
+    background-color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+    top: 30%;
+    left: 25%;
+    font-size: 20px;
+}
 }
