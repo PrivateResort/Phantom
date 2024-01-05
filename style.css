@@ -181,6 +181,9 @@ body{
 
 /* Gallery container for small screens */
 @media (max-width: 768px) {
+    body{
+        width: 100vh;
+    }
   .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
