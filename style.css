@@ -174,7 +174,7 @@ body{
     text-decoration: none;
     color: black;
   }
-  button{
+  a button{
         padding: 5px;
         border-radius: 5px;
     }
