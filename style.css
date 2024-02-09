@@ -210,6 +210,11 @@
     top: 10%;
     right: 0;
   }
+
+  .navigation-link a{
+    font-size: 5px;
+  }
+
   .welcome{
     position: absolute;
     background-color: aliceblue;
