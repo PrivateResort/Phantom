@@ -1,57 +1,72 @@
-.navigation{
-    display: flex;
-    background-color: gray;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.navigation-child{
-    display: flex;
-    align-items: center;
-    font-weight: bold;
+body {
+  background-color: #fff;
+  font-family: "Permanent Marker", cursive;
 }
 
-.navigation-child span{
-  padding-left: 10px;
-  animation: 1s neon infinite ease-in-out;
+.d-flex {
+  display: flex;
 }
 
-@keyframes neon {
-  0% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
-  }
-  50% {
-    text-shadow: none;
-  }
-  100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
-  }
+.justify-content-spacebetween {
+  justify-content: space-between;
 }
 
-
-.navigation-link a{
-    text-decoration: none;
-    color: black;
-    margin-left: 10px;
+.align-item-center {
+  align-items: center;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+.img-100sz {
+  width: 100px;
+  height: 100px;
 }
-.container-parent {
+
+.boxshadow {
+  box-shadow: 0 0 10px black;
+}
+
+.flex-directioncolumn {
+  flex-direction: column;
+}
+
+.d-block {
+  display: block;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.margin10 {
+  margin: 10px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+}
+
+main {
   background-image: url(media/bg.jpg);
-  background-size: 100% 100%;
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 100vh;
-  /* background-position: fixed; */
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.container-parent h1{
+.container-parent h1 {
   background-color: aliceblue;
   color: red;
   padding: 20px;
@@ -59,163 +74,168 @@
   border: 1px black solid;
 }
 
-.card-container{
-    border: 2px black solid;
-    background-color: #c2ce8d;
+.card-container {
+  border: 2px black solid;
+  background-color: #c2ce8d;
 }
 
 .card {
-    width: 300px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 10px;
-    background-color: aliceblue;
-  }
-
-  .card img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .title{
-    position: relative;
-    border: 2px black solid;
-    background-image: linear-gradient(white, #dbdecb);
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .cardcontainer-child{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .gallery{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: #040404;
-    margin-top: 5px;
-  }
-
-  /*#############################################ZIG-ZAG Layout#############*/
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    padding: 20px;
-  }
-  
-  .image img{
-    height: 300px; /* Adjust the height as needed */
-    width: 300px;
-    padding-left: 40%;
-  }
-  
-  .content {
-    color: red;
-    padding-right: 50%;
-    text-align: justify;
-    /* Add styling for the content and description */
-  }
-
-  .content-reverse {
-    color: red;
-    padding-left: 40%;
-    text-align: justify;
-    padding-right: 5px;
-    /* Add styling for the content and description */
-  }
-
-  .image-reverse img{
-    height: 300px; /* Adjust the height as needed */
-    width: 300px;
-    padding-right: 30%;
-  }
-
-  /* ENDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD OF PHANTOM TROUPE*/
-.thankyou img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 300px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: aliceblue;
 }
 
-.thankyou p{
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align: center;
-    color: yellow;
+.card img {
+  width: 300px;
+  height: 300px;
+}
+
+.title {
+  position: relative;
+  border: 2px black solid;
+  background-image: linear-gradient(white, #dbdecb);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardcontainer-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #040404;
+  margin-top: 5px;
+}
+
+.card h2,
+.card p {
+  padding-left: 10px;
+}
+
+.image img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+
+.content {
+  color: red;
+  text-align: justify;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  align-items: center;
+  border: 1px solid red;
+  margin: 10px;
+  padding: 10px;
+}
+
+.thankyou img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thankyou p {
+  display: block;
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.uparrow {
+  position: fixed;
+  background-color: darkolivegreen;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-  /*#############################################About#############*/
+/*#############################################About#############*/
 
-  .about{
-    background-color: dimgrey;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
+.about {
+  background-color: dimgrey;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
 
-  .about-child{
-    border: 2px black solid;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 10px;
-    padding: 10px;
-  }
+.about-child {
+  border: 2px black solid;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10px;
+  padding: 10px;
+}
 
-  .contact{
-    background-color: dimgrey;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
+.contact {
+  background-color: dimgrey;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
 
-  .contact-child{
-    border: 2px black solid;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 10px;
-    padding: 10px;
-  }
+.contact-child {
+  border: 2px black solid;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10px;
+  padding: 10px;
+}
 
-  .contact-child ul li{
-    list-style-type: none;
-    color: blue;
-  }
+.contact-child ul li {
+  list-style-type: none;
+  color: blue;
+}
 
-  a{
-    text-decoration: none;
-    color: black;
-  }
-  a button{
-        padding: 5px;
-        border-radius: 5px;
-    }
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a button {
+  padding: 5px;
+  border-radius: 5px;
+}
 
 /* Gallery container for small screens */
 @media (max-width: 768px) {
-    body{
-        width: 100vh;
-    }
+  body {
+    width: 100vh;
+  }
+
   .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
-    .navigation-child a{
+
+  .navigation-child a {
     position: absolute;
     top: 10%;
     right: 0;
   }
 
-  .navigation-link a{
+  .navigation-link a {
     display: none;
   }
 
-  .welcome{
+  .welcome {
     position: absolute;
     background-color: aliceblue;
     font-weight: bold;
@@ -225,15 +245,16 @@
     top: 30%;
     left: 10%;
     font-size: 20px;
-}
+  }
 
-    .containers{
-        display: block;
-        margin: auto;
-}
-     .card img{
-        width: 150px;
-    }
+  .containers {
+    display: block;
+    margin: auto;
+  }
+
+  .card img {
+    width: 150px;
+  }
 }
 
 /* Gallery container for medium screens */
@@ -241,7 +262,8 @@
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-   .welcome{
+
+  .welcome {
     position: absolute;
     background-color: aliceblue;
     font-weight: bold;
@@ -251,18 +273,19 @@
     top: 30%;
     left: 10%;
     font-size: 20px;
-}
-        .containers{
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-}
+  }
+
+  .containers {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
 
 }
 
 /* Gallery container for large screens */
 @media (min-width: 1025px) {
- 
-  .welcome{
+
+  .welcome {
     position: absolute;
     background-color: aliceblue;
     font-weight: bold;
@@ -272,22 +295,23 @@
     top: 30%;
     left: 5%;
     font-size: 20px;
-      color: red;
-}
-        .containers{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-}
+    color: red;
+  }
 
-.content{
-  padding-left: 50px;
-}
+  .containers {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 
-.thankyou p{
-  margin-left: 30%;
-  margin-right: 30%;
-  text-align: center;
-  color: black;
-  font-size: 20px;
-}
+  .content {
+    padding-left: 50px;
+  }
+
+  .thankyou p {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+  }
 }
